@@ -1,0 +1,12 @@
+{% extends 'home.html' %}
+{% block body %}
+    <form action="" method="post">
+        {% csrf_token %}
+        <label>label</label>
+        <input type="text" name="label"/><br>
+        <label>description</label>
+        <input type="text" name="description"/><br>
+        <input type="submit"/>
+
+    </form>
+{% endblock %}
